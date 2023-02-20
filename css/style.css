@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('fonts/Gloock-Regular.ttf') format('woff2'),
+       url('fonts/Gloock-Regular.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+#main-page-welcome-to-dm {
+  animation: slide-in 1.75s;
+}
+
+#main-page-button {
+  animation: slide-in 2s;;
+}
+
+
+html {
+  overflow-x: hidden;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version */
+}
+
+
+body {
+    font-family: 'PT Serif', serif;
+    font-size: 16px;
+    max-width: 100%;
+    text-align: center;
+}
+
+body {
+  background-image: url('imgs/model2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+.logo {
+  padding: 9px;
+  font-family: "MyCustomFont";
+  font-weight: 300
+}
+
+
+li {
+   display: inline-block;
+   padding: 20px;
+   font-family: "MyCustomFont";
+}
+
+
+li a{
+  text-align: center;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  color: black;
+}
+
+li a:visited{
+  color: black;
+}
+
+li a:hover{
+  text-decoration: underline;
+  color: white;
+}
+
+
+.navigation {
+  background-color: transparent;
+  color: black;
+  height: 64px;
+  position: relative; bottom: 80px;
+ 
+}
+
+.inner-right{
+  padding-right: 140px;
+}
+
+.inner-left{
+  padding-left: 250px;
+}
+
+.site-header{
+  font-size: 25px;
+  background-size: cover;
+  position: relative; top: 150px; left: 460px;
+}
+
+.site-header button{
+  font-size: 15px;
+  font-family: 'MyCustomFont';
+  padding: 10px;
+  background-color: transparent;
+}
+
+.site-header button:hover{
+  box-shadow: 4px 4px 5px white;
+  color: white;
+  cursor: pointer;
+}
