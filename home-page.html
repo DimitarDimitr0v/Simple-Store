@@ -3,43 +3,53 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=\, initial-scale=1.0">
+        <meta name="viewport" content="width=, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="images" href="imgs/model2.jpg">
-        <title>Document</title>
+        <script src="javascript/loaded.js"></script>
     </head>
-
     <body>
+        <div id="video-container">
+            <video autoplay loop muted poster="css/imgs/video.mp4" id="bg-video">
+              <source src="css/imgs/video.mp4" type="video/mp4">
+              
+            </video>
+        </div>
 
-        <header>    
-            <div>
+            <header>    
                 <h1 class="logo"> D&M</h1>
-            </div>
-
-            <div>
+                <div>
                     <nav class="navigation">
                         <ul>
                             <li><a href="men.html">MEN</a></li>
                             <li class="inner-right"><a href="women.html"> WOMEN</a></li>
                             <li class="inner-left"><a href="about-us.html">ABOUT US</a></li>
                             <li><a href="contact-us.html">CONTACT US</a></li>
-                        </ul>
-                        
+                        </ul> 
                     </nav>
-            </div>
-        </header>
+                    <div class="site-header">
+                        <h1 id="main-page-welcome-to-dm">Добре дошли в D&M</h1>
+                        <button id="main-page-button">Пазарувайте сега</button>
+                    </div>
+                </div>
+            </header>
+
 
         <main>
-            <div class="site-header">
-                <h1 id="main-page-welcome-to-dm">Добре дошли в D&M</h1>
-                <button id="main-page-button">Пазарувайте сега</button>
+
+            <span class="box-img">
+                <img src="css/imgs/model3.jpg" alt="" width="1400px" height="900px">
+            </span>
+                
+            <div class="box-img-text">
+                <p>The perfect vacation essentials</p>
+                <button>Shop now</button>
             </div>
+                
+    
+
         </main>
 
 
-        <footer>
-
-            
-        </footer>
+    <script src="javascript/loaded.js"></script>
     </body>
 </html>

@@ -39,20 +39,17 @@ body {
     font-size: 16px;
     max-width: 100%;
     text-align: center;
-}
-
-body {
-  background-image: url('imgs/model2.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+    margin-top: 0px;
+    margin-left: 0px;
 }
 
 
 .logo {
   padding: 9px;
   font-family: "MyCustomFont";
+  margin-top: 0px;
   font-weight: 300
+  
 }
 
 
@@ -76,7 +73,7 @@ li a:visited{
 }
 
 li a:hover{
-  text-decoration: underline;
+  text-decoration: none;
   color: white;
 }
 
@@ -114,4 +111,52 @@ li a:hover{
   box-shadow: 4px 4px 5px white;
   color: white;
   cursor: pointer;
+}
+
+main{
+  position: relative; top: 900px;
+}
+
+
+#video-container {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0;
+  margin: 0;
+}
+
+
+.models li{
+  position: relative; left: 20px;
+}
+
+.box-img-text{
+  z-index: 1;
+  position: relative; bottom: 800px; right: 350px;
+}
+.box-img-text p{
+  font-size: 30px;
+  font-family: "MyCustomFont";
+
+}
+
+.box-img-text button{
+  line-height: 1;
+    font-size: 1rem;
+    letter-spacing: normal;
+    font-family:  "MyCustomFont";
+    font-weight: 500;
+    text-transform: none;
 }
